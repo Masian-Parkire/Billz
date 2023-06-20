@@ -1,14 +1,10 @@
-package com.example.hello
+package dev.masian.asses1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 
-import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
 import dev.masian.asses1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       binding=MainActivity.inflate(layoutInflater)
-
+       binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
     }
@@ -76,6 +71,12 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+//    companion object {
+//        fun inflate(layoutInflater: LayoutInflater) {
+//
+//        }
+//    }
 }
 
 

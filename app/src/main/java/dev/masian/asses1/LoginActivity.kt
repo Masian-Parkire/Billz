@@ -1,4 +1,4 @@
-package com.example.hello
+package dev.masian.asses1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        binding=LoginActivity.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 
@@ -22,4 +22,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+//    companion object {
+//        fun inflate(layoutInflater: LayoutInflater) {
+//
+//        }
+//    }
 }
